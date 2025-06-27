@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Addission form</title>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+                background-color: khaki;
+            }
+            h1{
+                text-align: center;
+            }
+            .container{
+                border: 2px solid red;
+                padding: 40px;
+                border-radius: 10px;
+
+            }
+            /*.Pd{
+                border: 2px solid blue;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px;
+            }
+           .Cd{
+            border: 2px solid blue;
+                border-radius: 10px;
+                padding: 20px;
+
+           } */
+
+           fieldset{
+                border: 2px solid blue;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px;
+
+           }
+           input{
+            height: 30px;
+           }
+           .btn{
+                background-color: blue;
+                color:white;
+                font-size: 20px;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                box-shadow: 1px 1px 3px red, -1px -1px 3px tomato;
+           }
+        </style>
+    </head>
+    <body>
+        
+        <h1>College Admission Form</h1>
+        <div class="container">
+            <fieldset class="Pd">
+                <legend >Personal Details</legend>
+                    <div class="pdet">
+    
+                        <label for="">Full Name:</label><br><br>
+                        <input type="text" ><br><br>
+
+                        <label for="">Date of Birth:</label><br><br>
+                        <input type="date" ><br><br><br>
+
+                        <label for="">Gender: </label>
+                        <input type="radio" >Male
+                        <input type="radio" >Female
+                        <input type="radio" >Other
+                        <br><br><br>
+
+                        <label for="">Nationality:</label>
+                        <input type="text" >
+
+                    </div>
+                
+            </fieldset>
+
+            <fieldset class="Cd">
+                <legend> Contact Details </legend>
+                    <label for="">Address:</label><br><br>
+                    <textarea rows="4" cols="20"></textarea><br><br><br>
+
+                    <label for="">Phone Number:</label><br><br>
+                    <input type="number" ><br><br><br>
+
+                    <label for="">Email:</label><br><br>
+
+                    <input type="email" >
+            </fieldset>
+
+             <fieldset class="Cd">
+                <legend> Education Background </legend>
+                    <label for="">High school Name:</label><br><br>
+                    <input type="text" ><br><br><br>
+
+                    <label for="">Year of Passing:</label><br><br>
+                    <input type="number" ><br><br><br>
+
+                    <label for="">Percentage/Grade:</label><br><br>
+                    <input type="text" ><br><br><br>
+                    
+                    <label for="">Preferred Course :</label><br><br>
+                    <select >
+                        <option value="">--Select Course--</option>
+                        <option>BCA</option>
+                        <option>BBA</option>
+                        <option>BCOM</option>
+                        <option>BSC</option>
+
+                    </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Upload Documents</legend>
+                <label for="">Passport Size Photo:</label><br><br>
+                <input type="file" ><br><br><br>
+
+                 <label for="">10th Marksheet:</label><br><br>
+                <input type="file" ><br><br><br>
+
+                 <label for="">12th Marksheet:</label><br><br>
+                <input type="file" ><br><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Declaration</legend>
+                <p>I hereby declare that all the information provided is true and correct.</p>
+                <input type="checkbox" required>
+            </fieldset>
+
+            <button class="btn">Submit Application</button><br><br>
+            <button class="btn">Reset Form</button>
+       
+
+
+        </div>
+       
+    </body>
+</html>
