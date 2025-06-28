@@ -9,11 +9,11 @@
             margin: 0;
             padding: 0;
             background-color: rgb(139, 165, 175);
+            
         }
 
         header {
             width: 100%;
-            background-color: rgb(177, 164, 164);
             padding: 20px;
             color: black;
             text-align: center;
@@ -22,21 +22,19 @@
             background-image: url("SHDC.jpg");
             background-size:1550px 350px;
             background-repeat: no-repeat;
-
-
         }
 
         header p {
-            color: blue;
+            color: black;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: bold;
             margin-top: 100px;
         }
 
         header p:hover {
-            color: red;
-            font-size: 35px;
+            
+            text-shadow: 2px 2px 3px blue, -2px 1px 3px red;
             font-family: Arial, sans-serif;
 
         }
@@ -47,13 +45,13 @@
             animation-duration: 5s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
-            display: flex;
+            
             margin-top: 0;
         }
         nav {
             height: 50px;
             background-color: rgb(17, 17, 65);
-            padding: 20px;
+            padding: 12px;
 
         }
         nav ul {
@@ -72,8 +70,8 @@
             font-size: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        a:hover {
-            color: blue;
+        nav ul li a:hover {
+            color: rgb(65, 224, 224);
             text-decoration: underline;
             font-size: 23px;
         }
@@ -86,12 +84,16 @@
             box-shadow: 2px 2px 5px blue, -2px -2px 5px red;
             transition: transform 0.2s ease;
             display: flex;
-            height: 200px;
+            justify-content: space-between;
             gap: 50px;
         }
 
         section:hover {
             transform: translateY(10px);
+        }
+        section div{
+            flex: 1 1 45%;
+            margin: 10px 0;
         }
       
         footer {
@@ -122,11 +124,11 @@
 
         @keyframes move {
             from {
-                left: 100px
+                left: 0px
             }
 
             to {
-                left: 500px
+                left: 20px
             }
 
         }
