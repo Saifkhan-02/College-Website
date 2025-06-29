@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .log-box{
+            background-color: lightyellow;
+            border: none;
+            width: 400px;
+            height: auto;
+            padding: 34px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgb(218, 64, 64), -2px -2px 5px rgb(218, 64, 64) ;
+
+        }
+        h1{
+            text-align: center;
+            font-size: 42px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(8, 8, 96);
+            text-shadow: 1px 2px 3px blue;
+        }
+        h1:hover{
+            text-shadow: 1px 1px 3px white, -1px -1px 3px blue;
+            transition: ease-in-out 0.3s;
+            transform: scale(1.1);
+        }
+        input{
+            padding: 5px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 2px 2px 3px blue, -1px -1px 2px blue;
+        }
+        .login-btn{
+            width: 100%;
+            font-size: 23px;
+            padding: 5px;
+            font-weight: bold;
+            background-color: blue;
+            color: white;
+            border-radius: 8px;
+            
+
+        }
+        .login-btn:hover{
+            box-shadow: 2px 2px 3px green, -1px -1px 2px black;
+        }
+        .link{
+            text-align: center;
+            font-size: 17px;
+            padding: 10px;
+        }
+        .link a:hover{
+            transition: ease-in-out 0.3s;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="log-box">
+        <h1>Login</h1>
+     <form id="form-box" action="">
+           <input type="text" name="uname" id="uname" placeholder="username" required><br><br>
+        <input type="password" name="upass" id="upass" placeholder="Password" required>
+        <br><br>
+
+        <button class="login-btn">Login</button>
+
+     </form>
+
+     <div class="link">
+        Don't have an account? <a href="SplitPanel.html" target="_blank">Register</a>
+     </div>
+
+        
+    </div>
+
+    <script>
+       
+        
+    </script>
+</body>
+</html>
